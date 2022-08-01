@@ -1,22 +1,13 @@
 import json
 import sqlite3
 
-# open json file and convert dict object
-file = open("../WebScrapping/quotes.json", "r")
-json_file = file.read() 
-
-quotes_and_author_dict = json.loads(json_file)
-
-quotes_details = quotes_and_author_dict['quotes']
-authors_details = quotes_and_author_dict['authors']
-
 # Connecting to sqlite
 connection = sqlite3.connect('quotes.db')
 
 #creat a cursor object
 cursor_obj = connection.cursor()
 
-def create_and_insert_values_of_authors_table():
+def create_and_insert_values_of_authors_table(authors_details):
     # Delete the authors table if already exists.
     cursor_obj.execute("DROP TABLE IF EXISTS authors")
 
@@ -45,7 +36,7 @@ def get_authour_id(name):
     return author_id
     
 
-def create_and_insert_values_of_quotes_table():
+def create_and_insert_values_of_quotes_table(quotes_details):
     # Delete the quotes table if already exists.
     cursor_obj.execute("DROP TABLE IF EXISTS quotes")
 
@@ -83,7 +74,7 @@ def get_all_tags_and_tag_ids_pair_list(quotes_details):
     return merged_list
 
 
-def create_and_insert_values_of_tags_table():
+def create_and_insert_values_of_tags_table(quotes_details):
     # Delete the tags table if already exists.
     cursor_obj.execute("DROP TABLE IF EXISTS tags")
 
@@ -125,7 +116,7 @@ def get_quote_ids_and_tag_ids_merged_list(quote_dict):
 
 
 
-def create_and_insert_values_of_quote_tag_table():
+def create_and_insert_values_of_quote_tag_table(quotes_details):
     # Delete the quote_tag table if already exists.
     cursor_obj.execute("DROP TABLE IF EXISTS quote_tag")
 
@@ -145,16 +136,26 @@ def create_and_insert_values_of_quote_tag_table():
         cursor_obj.executemany("INSERT INTO quote_tag VALUES (?,?);", quote_ids_and_tag_ids_merged_list)
 
 
-create_and_insert_values_of_authors_table()
-connection.commit() #commint the changes in db
+# open json file and convert dict object
+file = open("../WebScrapping/quotes.json", "r")
+json_file = file.read() 
 
-create_and_insert_values_of_quotes_table()
+quotes_and_author_dict = json.loads(json_file)
+
+quotes_details = quotes_and_author_dict['quotes']
+authors_details = quotes_and_author_dict['authors']
+
+# call the above functions
+create_and_insert_values_of_authors_table(authors_details)
+connection.commit() #commit the changes in db
+
+create_and_insert_values_of_quotes_table(quotes_details)
 connection.commit()
 
-create_and_insert_values_of_tags_table()
+create_and_insert_values_of_tags_table(quotes_details)
 connection.commit()
 
-create_and_insert_values_of_quote_tag_table()
+create_and_insert_values_of_quote_tag_table(quotes_details)
 connection.commit()
 
 # Close the connection
