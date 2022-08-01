@@ -157,14 +157,6 @@ connection.commit()
 create_and_insert_values_of_quote_tag_table()
 connection.commit()
 
-statement = '''SELECT * FROM quote_tag'''
-  
-cursor_obj.execute(statement)
-  
-output = cursor_obj.fetchall()
-print(output)
-  
-
 # Close the connection
 connection.close()
         
