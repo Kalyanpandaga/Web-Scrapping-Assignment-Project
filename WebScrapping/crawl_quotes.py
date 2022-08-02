@@ -25,10 +25,12 @@ def get_author_dict(quotes_element):
     # selecting author_names from website and adding to the author_dict
     author_dict['name'] = quotes_element.find("small", class_="author").text
 
+    # find and take the author page url
     author_details_container =quotes_element.find_all("span")[1]
     author_page_url = author_details_container.find("a")['href']
-    author_page_url = main_url + author_page_url
+    author_page_url = main_url + author_page_url 
 
+    # request to the author page
     author_html_doc = requests.get(author_page_url)
 
     soup_aut = BeautifulSoup(author_html_doc.content, 'html.parser')
@@ -50,8 +52,8 @@ from bs4 import BeautifulSoup
 main_url = 'http://quotes.toscrape.com'
 
 
-quotes = []
-authors = []
+quotes = []  # we append all quotation details in this list
+authors = [] # we append all authors details in this list
 def web_scrapping(url):
     # requesting to the web page
     html_doc = requests.get(url)
@@ -63,10 +65,10 @@ def web_scrapping(url):
     for quotes_element in quotes_elements:
         quotes.append(get_quote_dict(quotes_element))
         authors.append(get_author_dict(quotes_element))
-    
-    next_elememt = soup.find("li", class_="next")
 
     # using recursive function to Crawling Data from multiple web pages
+    next_elememt = soup.find("li", class_="next")
+
     if next_elememt == None:
         return
     page_url = next_elememt.find('a')['href']
