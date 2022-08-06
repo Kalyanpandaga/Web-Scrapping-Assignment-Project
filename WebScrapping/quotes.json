@@ -842,11 +842,6 @@
             "reference": "http://quotes.toscrape.com/author/J-K-Rowling"
         },
         {
-            "name": "Albert Einstein",
-            "born": "March 14, 1879 in Ulm, Germany",
-            "reference": "http://quotes.toscrape.com/author/Albert-Einstein"
-        },
-        {
             "name": "Jane Austen",
             "born": "December 16, 1775 in Steventon Rectory, Hampshire, The United Kingdom",
             "reference": "http://quotes.toscrape.com/author/Jane-Austen"
@@ -855,11 +850,6 @@
             "name": "Marilyn Monroe",
             "born": "June 01, 1926 in The United States",
             "reference": "http://quotes.toscrape.com/author/Marilyn-Monroe"
-        },
-        {
-            "name": "Albert Einstein",
-            "born": "March 14, 1879 in Ulm, Germany",
-            "reference": "http://quotes.toscrape.com/author/Albert-Einstein"
         },
         {
             "name": "Andr\u00e9 Gide",
@@ -880,21 +870,6 @@
             "name": "Steve Martin",
             "born": "August 14, 1945 in Waco, Texas, The United States",
             "reference": "http://quotes.toscrape.com/author/Steve-Martin"
-        },
-        {
-            "name": "Marilyn Monroe",
-            "born": "June 01, 1926 in The United States",
-            "reference": "http://quotes.toscrape.com/author/Marilyn-Monroe"
-        },
-        {
-            "name": "J.K. Rowling",
-            "born": "July 31, 1965 in Yate, South Gloucestershire, England, The United Kingdom",
-            "reference": "http://quotes.toscrape.com/author/J-K-Rowling"
-        },
-        {
-            "name": "Albert Einstein",
-            "born": "March 14, 1879 in Ulm, Germany",
-            "reference": "http://quotes.toscrape.com/author/Albert-Einstein"
         },
         {
             "name": "Bob Marley",
@@ -957,56 +932,6 @@
             "reference": "http://quotes.toscrape.com/author/Jim-Henson"
         },
         {
-            "name": "Dr. Seuss",
-            "born": "March 02, 1904 in Springfield, MA, The United States",
-            "reference": "http://quotes.toscrape.com/author/Dr-Seuss"
-        },
-        {
-            "name": "Albert Einstein",
-            "born": "March 14, 1879 in Ulm, Germany",
-            "reference": "http://quotes.toscrape.com/author/Albert-Einstein"
-        },
-        {
-            "name": "J.K. Rowling",
-            "born": "July 31, 1965 in Yate, South Gloucestershire, England, The United Kingdom",
-            "reference": "http://quotes.toscrape.com/author/J-K-Rowling"
-        },
-        {
-            "name": "Albert Einstein",
-            "born": "March 14, 1879 in Ulm, Germany",
-            "reference": "http://quotes.toscrape.com/author/Albert-Einstein"
-        },
-        {
-            "name": "Bob Marley",
-            "born": "February 06, 1945 in Nine Mile, Saint Ann, Jamaica",
-            "reference": "http://quotes.toscrape.com/author/Bob-Marley"
-        },
-        {
-            "name": "Dr. Seuss",
-            "born": "March 02, 1904 in Springfield, MA, The United States",
-            "reference": "http://quotes.toscrape.com/author/Dr-Seuss"
-        },
-        {
-            "name": "J.K. Rowling",
-            "born": "July 31, 1965 in Yate, South Gloucestershire, England, The United Kingdom",
-            "reference": "http://quotes.toscrape.com/author/J-K-Rowling"
-        },
-        {
-            "name": "Bob Marley",
-            "born": "February 06, 1945 in Nine Mile, Saint Ann, Jamaica",
-            "reference": "http://quotes.toscrape.com/author/Bob-Marley"
-        },
-        {
-            "name": "Mother Teresa",
-            "born": "August 26, 1910 in Skopje, Macedonia, the Former Yugoslav Republic of",
-            "reference": "http://quotes.toscrape.com/author/Mother-Teresa"
-        },
-        {
-            "name": "J.K. Rowling",
-            "born": "July 31, 1965 in Yate, South Gloucestershire, England, The United Kingdom",
-            "reference": "http://quotes.toscrape.com/author/J-K-Rowling"
-        },
-        {
             "name": "Charles M. Schulz",
             "born": "November 26, 1922 in Minneapolis, MN, The United States",
             "reference": "http://quotes.toscrape.com/author/Charles-M-Schulz"
@@ -1015,11 +940,6 @@
             "name": "William Nicholson",
             "born": "January 12, 1948 in Lewes, Sussex, The United Kingdom",
             "reference": "http://quotes.toscrape.com/author/William-Nicholson"
-        },
-        {
-            "name": "Albert Einstein",
-            "born": "March 14, 1879 in Ulm, Germany",
-            "reference": "http://quotes.toscrape.com/author/Albert-Einstein"
         },
         {
             "name": "Jorge Luis Borges",
@@ -1042,64 +962,14 @@
             "reference": "http://quotes.toscrape.com/author/C-S-Lewis"
         },
         {
-            "name": "Marilyn Monroe",
-            "born": "June 01, 1926 in The United States",
-            "reference": "http://quotes.toscrape.com/author/Marilyn-Monroe"
-        },
-        {
-            "name": "Marilyn Monroe",
-            "born": "June 01, 1926 in The United States",
-            "reference": "http://quotes.toscrape.com/author/Marilyn-Monroe"
-        },
-        {
-            "name": "Albert Einstein",
-            "born": "March 14, 1879 in Ulm, Germany",
-            "reference": "http://quotes.toscrape.com/author/Albert-Einstein"
-        },
-        {
-            "name": "Marilyn Monroe",
-            "born": "June 01, 1926 in The United States",
-            "reference": "http://quotes.toscrape.com/author/Marilyn-Monroe"
-        },
-        {
-            "name": "Marilyn Monroe",
-            "born": "June 01, 1926 in The United States",
-            "reference": "http://quotes.toscrape.com/author/Marilyn-Monroe"
-        },
-        {
             "name": "Martin Luther King Jr.",
             "born": "January 15, 1929 in Atlanta, Georgia, The United States",
             "reference": "http://quotes.toscrape.com/author/Martin-Luther-King-Jr"
         },
         {
-            "name": "J.K. Rowling",
-            "born": "July 31, 1965 in Yate, South Gloucestershire, England, The United Kingdom",
-            "reference": "http://quotes.toscrape.com/author/J-K-Rowling"
-        },
-        {
             "name": "James Baldwin",
             "born": "August 02, 1924 in Harlem, New York, The United States",
             "reference": "http://quotes.toscrape.com/author/James-Baldwin"
-        },
-        {
-            "name": "Jane Austen",
-            "born": "December 16, 1775 in Steventon Rectory, Hampshire, The United Kingdom",
-            "reference": "http://quotes.toscrape.com/author/Jane-Austen"
-        },
-        {
-            "name": "Eleanor Roosevelt",
-            "born": "October 11, 1884 in The United States",
-            "reference": "http://quotes.toscrape.com/author/Eleanor-Roosevelt"
-        },
-        {
-            "name": "Marilyn Monroe",
-            "born": "June 01, 1926 in The United States",
-            "reference": "http://quotes.toscrape.com/author/Marilyn-Monroe"
-        },
-        {
-            "name": "Albert Einstein",
-            "born": "March 14, 1879 in Ulm, Germany",
-            "reference": "http://quotes.toscrape.com/author/Albert-Einstein"
         },
         {
             "name": "Haruki Murakami",
@@ -1142,44 +1012,9 @@
             "reference": "http://quotes.toscrape.com/author/Suzanne-Collins"
         },
         {
-            "name": "Suzanne Collins",
-            "born": "August 11, 1962 in Hartford, Connecticut, The United States",
-            "reference": "http://quotes.toscrape.com/author/Suzanne-Collins"
-        },
-        {
-            "name": "C.S. Lewis",
-            "born": "November 29, 1898 in Belfast, Ireland",
-            "reference": "http://quotes.toscrape.com/author/C-S-Lewis"
-        },
-        {
             "name": "J.R.R. Tolkien",
             "born": "January 03, 1892 in Bloemfontein, Mangaung, Free State, South Africa",
             "reference": "http://quotes.toscrape.com/author/J-R-R-Tolkien"
-        },
-        {
-            "name": "J.K. Rowling",
-            "born": "July 31, 1965 in Yate, South Gloucestershire, England, The United Kingdom",
-            "reference": "http://quotes.toscrape.com/author/J-K-Rowling"
-        },
-        {
-            "name": "Ernest Hemingway",
-            "born": "July 21, 1899 in Oak Park, Illinois, The United States",
-            "reference": "http://quotes.toscrape.com/author/Ernest-Hemingway"
-        },
-        {
-            "name": "Ralph Waldo Emerson",
-            "born": "May 25, 1803 in Boston, Massachusetts, The United States",
-            "reference": "http://quotes.toscrape.com/author/Ralph-Waldo-Emerson"
-        },
-        {
-            "name": "Mark Twain",
-            "born": "November 30, 1835 in Florida, Missouri, The United States",
-            "reference": "http://quotes.toscrape.com/author/Mark-Twain"
-        },
-        {
-            "name": "Dr. Seuss",
-            "born": "March 02, 1904 in Springfield, MA, The United States",
-            "reference": "http://quotes.toscrape.com/author/Dr-Seuss"
         },
         {
             "name": "Alfred Tennyson",
@@ -1187,19 +1022,9 @@
             "reference": "http://quotes.toscrape.com/author/Alfred-Tennyson"
         },
         {
-            "name": "Charles Bukowski",
-            "born": "August 16, 1920 in Andernach, Germany",
-            "reference": "http://quotes.toscrape.com/author/Charles-Bukowski"
-        },
-        {
             "name": "Terry Pratchett",
             "born": "April 28, 1948 in Beaconsfield, Buckinghamshire, England, The United Kingdom",
             "reference": "http://quotes.toscrape.com/author/Terry-Pratchett"
-        },
-        {
-            "name": "Dr. Seuss",
-            "born": "March 02, 1904 in Springfield, MA, The United States",
-            "reference": "http://quotes.toscrape.com/author/Dr-Seuss"
         },
         {
             "name": "J.D. Salinger",
@@ -1225,66 +1050,6 @@
             "name": "Ayn Rand",
             "born": "February 02, 1905 in St. Petersburg, Russian Federation",
             "reference": "http://quotes.toscrape.com/author/Ayn-Rand"
-        },
-        {
-            "name": "Mark Twain",
-            "born": "November 30, 1835 in Florida, Missouri, The United States",
-            "reference": "http://quotes.toscrape.com/author/Mark-Twain"
-        },
-        {
-            "name": "Albert Einstein",
-            "born": "March 14, 1879 in Ulm, Germany",
-            "reference": "http://quotes.toscrape.com/author/Albert-Einstein"
-        },
-        {
-            "name": "Jane Austen",
-            "born": "December 16, 1775 in Steventon Rectory, Hampshire, The United Kingdom",
-            "reference": "http://quotes.toscrape.com/author/Jane-Austen"
-        },
-        {
-            "name": "J.K. Rowling",
-            "born": "July 31, 1965 in Yate, South Gloucestershire, England, The United Kingdom",
-            "reference": "http://quotes.toscrape.com/author/J-K-Rowling"
-        },
-        {
-            "name": "Jane Austen",
-            "born": "December 16, 1775 in Steventon Rectory, Hampshire, The United Kingdom",
-            "reference": "http://quotes.toscrape.com/author/Jane-Austen"
-        },
-        {
-            "name": "Jane Austen",
-            "born": "December 16, 1775 in Steventon Rectory, Hampshire, The United Kingdom",
-            "reference": "http://quotes.toscrape.com/author/Jane-Austen"
-        },
-        {
-            "name": "C.S. Lewis",
-            "born": "November 29, 1898 in Belfast, Ireland",
-            "reference": "http://quotes.toscrape.com/author/C-S-Lewis"
-        },
-        {
-            "name": "C.S. Lewis",
-            "born": "November 29, 1898 in Belfast, Ireland",
-            "reference": "http://quotes.toscrape.com/author/C-S-Lewis"
-        },
-        {
-            "name": "Mark Twain",
-            "born": "November 30, 1835 in Florida, Missouri, The United States",
-            "reference": "http://quotes.toscrape.com/author/Mark-Twain"
-        },
-        {
-            "name": "Mark Twain",
-            "born": "November 30, 1835 in Florida, Missouri, The United States",
-            "reference": "http://quotes.toscrape.com/author/Mark-Twain"
-        },
-        {
-            "name": "C.S. Lewis",
-            "born": "November 29, 1898 in Belfast, Ireland",
-            "reference": "http://quotes.toscrape.com/author/C-S-Lewis"
-        },
-        {
-            "name": "J.K. Rowling",
-            "born": "July 31, 1965 in Yate, South Gloucestershire, England, The United Kingdom",
-            "reference": "http://quotes.toscrape.com/author/J-K-Rowling"
         },
         {
             "name": "Jimi Hendrix",
@@ -1315,21 +1080,6 @@
             "name": "Madeleine L'Engle",
             "born": "November 29, 1918 in New York City, New York, The United States",
             "reference": "http://quotes.toscrape.com/author/Madeleine-LEngle"
-        },
-        {
-            "name": "Mark Twain",
-            "born": "November 30, 1835 in Florida, Missouri, The United States",
-            "reference": "http://quotes.toscrape.com/author/Mark-Twain"
-        },
-        {
-            "name": "Dr. Seuss",
-            "born": "March 02, 1904 in Springfield, MA, The United States",
-            "reference": "http://quotes.toscrape.com/author/Dr-Seuss"
-        },
-        {
-            "name": "George R.R. Martin",
-            "born": "September 20, 1948 in Bayonne, New Jersey, The United States",
-            "reference": "http://quotes.toscrape.com/author/George-R-R-Martin"
         }
     ]
 }
