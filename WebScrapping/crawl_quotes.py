@@ -28,7 +28,7 @@ def get_quote_details_dict(quotes_element):
     quote_details_dict['quote'] = quotation #adding quototion to the quote_dict 
 
     author = get_author(quotes_element)
-    quote_details_dict['author'] = author_name  #adding author_name to the quote_dict
+    quote_details_dict['author'] = author  #adding author_name to the quote_dict
 
     tags = get_tag_list(quotes_element)
     quote_details_dict['tags'] = tags  #adding tags to the quote_dict
@@ -42,6 +42,18 @@ def get_author_page_url(quotes_element):
     author_page_url = main_url + author_page_url
     return author_page_url
 
+def get_author_name(author_details_element):
+    # selecting author_names from website 
+    author_name = author_details_element.h3.find(text=True, recursive=False)
+    author_name = author_name.replace("-", " ")
+    return author_name
+
+def get_born_date_and_location(author_details_element):
+    born_date = author_details_element.find("span", class_="author-born-date").text
+    born_location = author_details_element.find("span", class_="author-born-location").text
+    born_date_and_location = born_date +" "+ born_location
+    return born_date_and_location
+
 def get_author_details_dict(author_page_url):
     author_details_dict = dict()
  
@@ -49,21 +61,14 @@ def get_author_details_dict(author_page_url):
     author_html_doc = requests.get(author_page_url)
 
     soup_aut = BeautifulSoup(author_html_doc.content, 'html.parser')
-
-
-
-    # selecting author_names from website and adding to the author_dict
     author_details_element = soup_aut.find("div", class_="author-details")
-    
-    author_name = author_details_element.h3.find(text=True, recursive=False)
-    author_name = author_name.replace("-", " ")
-    author_details_dict['name'] = author_name
 
-    born_date = author_details_element.find("span", class_="author-born-date").text
-    born_location = author_details_element.find("span", class_="author-born-location").text
-    born_date_and_location = born_date +" "+ born_location
+    author_name = get_author_name(author_details_element)
+    author_details_dict['name'] = author_name #adding author name to the author_details_dict
 
+    born_date_and_location = get_born_date_and_location(author_details_element)
     author_details_dict['born'] = born_date_and_location 
+
     author_details_dict['reference'] = author_page_url
 
     return author_details_dict
