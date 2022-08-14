@@ -4,6 +4,8 @@ import sqlite3
 # Connecting to sqlite
 connection = sqlite3.connect('quotes.db')
 
+connection.execute("PRAGMA foreign_keys = 1")
+
 #creat a cursor object
 cursor_obj = connection.cursor()
 
@@ -37,7 +39,7 @@ def create_quote_table():
                 quote_id INTEGER PRIMARY KEY NOT NULL,
                 quote TEXT NOT NULL,
                 author_id INTEGER,
-                FOREIGN KEY(author_id) REFERENCES authors(author_id)
+                FOREIGN KEY(author_id) REFERENCES author(author_id) ON DELETE CASCADE
             );'''
     
     cursor_obj.execute(quote_table)   
@@ -95,8 +97,8 @@ def create_quote_tag_table():
     quote_tag_table = '''CREATE TABLE quote_tag (
                 quote_id INTEGER NOT NULL,
                 tag_id INTEGER NOT NULL,
-                FOREIGN KEY(quote_id) REFERENCES quotes(quotes_id),
-                FOREIGN KEY(tag_id) REFERENCES tags(tags_id)
+                FOREIGN KEY(quote_id) REFERENCES quote(quote_id) ON DELETE CASCADE,
+                FOREIGN KEY(tag_id) REFERENCES tag(tag_id) ON DELETE CASCADE
             );'''
     
     cursor_obj.execute(quote_tag_table)          

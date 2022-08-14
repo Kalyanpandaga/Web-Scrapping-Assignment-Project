@@ -83,7 +83,9 @@ main_url = 'http://quotes.toscrape.com'
 
 quotes = []  # we append all quotation details in this list
 authors = [] # we append all authors details in this list
-def web_scrapping(url):
+author_pages_url_list = []
+
+def get_quote_details_list_and_author_details_list(url):
     # requesting to the web page
     html_doc = requests.get(url)
     soup = BeautifulSoup(html_doc.content, 'html.parser')
@@ -95,9 +97,11 @@ def web_scrapping(url):
         quotes.append(get_quote_details_dict(quotes_element))
 
         author_page_url = get_author_page_url(quotes_element)
-        author_details_dict = get_author_details_dict(author_page_url)
-        if author_details_dict not in authors:
-            authors.append(author_details_dict)
+ 
+        if author_page_url not in author_pages_url_list: 
+            authors.append(get_author_details_dict(author_page_url))
+            author_pages_url_list.append(author_page_url)
+
 
     # using recursive function to Crawling Data from multiple web pages
     next_elememt = soup.find("li", class_="next")
@@ -106,10 +110,10 @@ def web_scrapping(url):
         return
     page_url = next_elememt.find('a')['href']
     url = main_url + page_url
-    web_scrapping(url)
+    get_quote_details_list_and_author_details_list(url)
 
 url = main_url       
-web_scrapping(url)
+get_quote_details_list_and_author_details_list(url)
 
 dict_of_quotes_and_author = {"quotes":quotes, "authors":authors}
 

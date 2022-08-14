@@ -50,8 +50,8 @@ def get_authors_who_authored_maxmimum_no_of_quotations(n):
                     GROUP BY 
                         quote.author_id 
                     ORDER BY 
-                        no_of_quotes 
-                    DESC LIMIT ?;'''
+                        no_of_quotes DESC 
+                    LIMIT ?;'''
     cursor_obj.execute(statement, (n,))
     top_n_authors_list_of_tuples = cursor_obj.fetchall()
 
@@ -64,16 +64,12 @@ def get_authors_who_authored_maxmimum_no_of_quotations(n):
 
 # call the above functions
 print(get_total_no_of_quotes())
-connection.commit() # commit the changes in db
 
 print(get_no_of_quotes_authored_by_author("Albert Einstein"))
-connection.commit()
 
 print(get_min_max_avg_no_of_tags())
-connection.commit()
 
 print(get_authors_who_authored_maxmimum_no_of_quotations(5))
-connection.commit()
 
 # Close the connection
 connection.close() 
