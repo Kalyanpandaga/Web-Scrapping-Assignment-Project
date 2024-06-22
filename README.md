@@ -1,4 +1,4 @@
-# Assignment-Project-NxtWave
+# Web-Scrapping-Assignment-Project
 
 Use Python to:
 
